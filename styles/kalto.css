@@ -6,6 +6,10 @@
 
 }
 
-#background-section3{
+.background-section3{
     background: #FFFFFF;
+}
+
+.benefits{
+    background-color: #fbfbfb;
 }
