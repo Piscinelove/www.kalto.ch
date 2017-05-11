@@ -828,7 +828,7 @@ hr.slim {
 }
 .navbar .navbar-brand > img {
   transition: all .4s;
-  max-height: 41px;
+  max-height: 60px;
 }
 .navbar .search_button {
   position: absolute;
@@ -942,7 +942,7 @@ hr.slim {
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: 600;
-  padding: 12px 4px 15px 4px;
+  padding: 12px 4px 15px 20px;
   border-top: 3px solid transparent;
   background: none;
 }

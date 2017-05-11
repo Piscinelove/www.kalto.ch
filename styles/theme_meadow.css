@@ -1475,16 +1475,16 @@ fieldset[disabled] .btn-info.btn-bordered.active {
   color: white;
 }
 .navbar-standard.opaque {
-  background: #ffffff;
+  background: rgba(30, 30, 30, 0.75);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .navbar-standard.opaque .navbar-nav > li > a {
-  color: #6D768C !important;
+  color: #FFFFFF !important;
 }
 .navbar-standard.opaque .navbar-nav > li > a:hover,
 .navbar-standard.opaque .navbar-nav > li > a:focus {
-  color: #6D768C;
-  border-color: #6D768C;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 .navbar-standard.opaque .navbar-nav > li.open > a,
 .navbar-standard.opaque .navbar-nav > li.active > a,
@@ -1492,8 +1492,8 @@ fieldset[disabled] .btn-info.btn-bordered.active {
 .navbar-standard.opaque .navbar-nav > li.active > a:hover,
 .navbar-standard.opaque .navbar-nav > li.open > a:focus,
 .navbar-standard.opaque .navbar-nav > li.active > a:focus {
-  color: #6D768C;
-  border-color: #6D768C;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 .navbar-standard.opaque .btn {
   margin-top: 12px !important;

@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-responsive.css">
     <link id="primary_color_scheme" rel="stylesheet" href="styles/theme_meadow.css">
+    <link rel="stylesheet" href="styles/kalto.css">
     <script src="scripts/vendor/modernizr.js"></script>
 
     <!-- start Mixpanel -->
@@ -91,12 +92,13 @@
             <button type="button" class="navbar-toggle"><i class="fa fa-align-justify fa-lg"></i></button><a href="/" class="navbar-brand"><img src="img/assets/logowhite.png" alt="" class="logo-white"><img src="img/assets/logo.png" alt="" class="logo-dark"></a>
           </div>
           <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right service-nav">
-              <li><a id="dropdownMenuSignup" class="upper btn btn-light btn-bordered pull-right" mixpanel-name="request_demo_click" mixpanel-provider= "navbar_request_demo" href="#marketplaces" >REQUEST DEMO</a></li>
-            </ul>
+
             <button type="button" class="navbar-toggle"><i class="fa fa-close fa-lg"></i></button>
             <ul id="one-page-menu" role="menu" class="nav navbar-nav navbar-right">
-              <li><a id="what_is_erated_link" href="#benefits" mixpanel-name="what_is_erated_click" >LEARN MORE</a></li>
+              <li><a id="accueil_link" href="#benefits" mixpanel-name="accueil_click" >Accueil</a></li>
+              <li><a id="produit_link" href="#benefits" mixpanel-name="produit_click" >Produit</a></li>
+              <li><a id="histoire_link" href="#benefits" mixpanel-name="histoire_click" >Notre histoire</a></li>
+              <li><a id="contact_link" href="#benefits" mixpanel-name="contact_click" >Contact</a></li>
             </ul>
           </div>
         </div>
@@ -108,7 +110,9 @@
             <div class="container">
               <div class="section-title text-center">
                 <div id="splash-carousel" class="owl-theme mp">
+                  <div class="background-section2">
                   <img class="bg" src="img/assets/bg.png" />
+                  </div>
                 </div>
                 <div class="learn-more-control">
                   <a href="#how-it-works" id="learn-more-link" mixpanel-name="learn_more_click">
@@ -121,13 +125,10 @@
                 <div class="splash-text-wrapper">
                   <div class="splash-text mp">
                     <span class="big-text">
-                      The Ultimate Business<br/> Intelligence 
-                      Solution For<br/> E-Commerce Marketplaces
+                     Don't worry, <br/> just chill it
                     </span>                    
                     <a id="splash_request_demo" href="#marketplaces" mixpanel-name="request_demo_click" mixpanel-provider="splash_request_demo">
-                      <div class="start-now-button">
-                        <span class="start-now-button-text">REQUEST DEMO</span>
-                      </div>
+
                     </a>
                   </div>
                 </div>
@@ -137,7 +138,7 @@
         </section>
       </section>     
       
-      <section id="benefits" data-wow-delay="0.4s" class="sep-top-lg sep-bottom-lg light wow fadeInUp animated" mixpanel="inview scrolled_to_benefits">
+      <section id="background-section3" data-wow-delay="0.4s" class="sep-top-lg sep-bottom-lg light wow fadeInUp animated" mixpanel="inview scrolled_to_benefits">
         <div class="container">
           <h2 class="text-center">eRated unlocks sellers' hidden potential across marketplaces</h2>
           <h3 class="text-center">Discover what your existing and new potential sellers are already doing in your competitor marketplaces in an automated data driven approach.</h3>
@@ -178,16 +179,16 @@
         </div>
       </section>
 
-      <section data-wow-delay="0.4s" class="light wow fadeInUp" id="articles">
-        <div class="container">
-          <div class="row">
-            <ul class="news-icons social-icon">
-              <li class="col-xs-2 col-xs-offset-1"><a class="tc"></a></li>
-              <li class="col-xs-2"><a class="tamebay"></a></li>
-              <li class="col-xs-2"><a class="city"></a></li>
-              <li class="col-xs-2"><a class="bytes"></a></li>
-              <li class="col-xs-2"><a class="techstars"></a></li>
-            </ul>
+      <section data-wow-delay="0.4s" class="mp " id="benefits" mixpanel="inview">
+        <div class="sep-top-lg sep-bottom-lg">
+          <div class="container">
+            <div class="section-title wow left-side  text-center">
+              <h2>Notre histoire</h2>
+              <p>Notre équipe d’exception est composée d’experts de la boisson chaude et froide. Nous avons </p>
+              <p>plusieurs fois eu la déception de boire notre café froid avant une présentation ennuyeuse et</p>
+              <p>le regret d’un thé en pleine canicule. Nous avons décidé de remédier à cette situation</p>
+              <p>et avons pris les choses en main.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -198,14 +199,14 @@
         <div class="sep-top-lg sep-bottom-lg">
           <div class="container">
             <div class="section-title wow left-side  text-center">
-              <h2>Contactez-nous</h2>
-              <p>Vous avez des questions à propos de notre produit ou des problèmes pour le commander ?</p>
-              <p>Laisse ton message, ainsi que ton adresse e-mail et notre équipe vous répondra dès que possible.</p>
+              <h2>Contacte-nous</h2>
+              <p>Tu as des questions à propos de notre produit ou des problèmes pour le commander ?</p>
+              <p>Laisse ton message, ainsi que ton adresse e-mail et notre équipe te répondra dès que possible.</p>
               <div>
-                <input type="text" placeholder="VOTRE NOM" class="form-name" />
-                <span class="error-response name">Entrez votre nom</span>
-                <input type="text" placeholder="VOTRE E-MAIL" class="form-email" />
-                <span class="error-response email">Entrez une adresse e-mail valide</span>
+                <input type="text" placeholder="TON NOM" class="form-name" />
+                <span class="error-response name">Entre ton nom</span>
+                <input type="text" placeholder="TON E-MAIL" class="form-email" />
+                <span class="error-response email">Entre une adresse e-mail valide</span>
               </div>
             </div>            
           </div>
