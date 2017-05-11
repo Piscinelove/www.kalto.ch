@@ -27,10 +27,10 @@ h5,
 h6,
 .contact-form label,
 dl.metadata dt {
-  color: #737c92;
+  color: #c6cad1;
 }
 .light {
-  color: #737c92;
+  color: #c6cad1;
 }
 .light h1,
 .light h2,
@@ -40,7 +40,7 @@ dl.metadata dt {
 .light h6,
 .light .contact-form label,
 .light p {
-  color: #737c92;
+  color: #c6cad1;
 }
 .dark {
   color: #222222;
@@ -81,12 +81,12 @@ dl.metadata dt {
 ::-moz-selection,
 ::-moz-selection {
   background: #a288d1;
-  color: #737c92;
+  color: #c6cad1;
 }
 ::selection,
 ::-moz-selection {
   background: #a288d1;
-  color: #737c92;
+  color: #c6cad1;
 }
 p strong {
   color: #222222;
@@ -98,17 +98,17 @@ p strong {
 }
 .demo-1 .sl-slide .main-title,
 .demo-2 .sl-slide .main-title {
-  color: #737c92;
+  color: #c6cad1;
 }
 .demo-1 .sl-slide blockquote p,
 .demo-2 .sl-slide blockquote p {
-  color: #737c92;
+  color: #c6cad1;
 }
 .owl-theme .owl-controls .owl-page span {
   background: #222222;
 }
 .owl-theme.pagination-light .owl-page span {
-  background: #737c92;
+  background: #c6cad1;
 }
 .section-title span {
   color: #a288d1;
@@ -137,10 +137,10 @@ p strong {
 }
 .table .evidence td {
   background: #a288d1;
-  color: #737c92;
+  color: #c6cad1;
 }
 .table .evidence td h5 {
-  color: #737c92;
+  color: #c6cad1;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -163,7 +163,7 @@ p strong {
 }
 .bootstrap-touchspin input.qty {
   border: 1px solid #eeeeee;
-  background: #737c92;
+  background: #c6cad1;
 }
 .bootstrap-touchspin input.qty:focus {
   color: #909090;
@@ -174,13 +174,13 @@ p strong {
   color: #909090;
 }
 #filters.light .btn {
-  color: #737c92;
+  color: #c6cad1;
 }
 #filters .btn-light,
 .btn-light {
   color: #222222;
-  background-color: #737c92;
-  border-color: #737c92;
+  background-color: #c6cad1;
+  border-color: #c6cad1;
 }
 #filters .btn-light:hover,
 .btn-light:hover,
@@ -194,7 +194,7 @@ p strong {
 .open .dropdown-toggle.btn-light {
   color: #a288d1;
   background-color: #ebebeb;
-  border-color: #737c92;
+  border-color: #c6cad1;
   box-shadow: none;
 }
 #filters .btn-light:active,
@@ -235,13 +235,13 @@ fieldset[disabled] .btn-light:active,
 .btn-light[disabled].active,
 fieldset[disabled] #filters .btn-light.active,
 fieldset[disabled] .btn-light.active {
-  background-color: #737c92;
-  border-color: #737c92;
+  background-color: #c6cad1;
+  border-color: #c6cad1;
   box-shadow: none;
 }
 #filters .btn-light .badge,
 .btn-light .badge {
-  color: #737c92;
+  color: #c6cad1;
   background-color: #fff;
 }
 #filters .btn-light.btn-bordered,
@@ -304,7 +304,7 @@ fieldset[disabled] .btn-light.btn-bordered:active,
 fieldset[disabled] #filters .btn-light.btn-bordered.active,
 fieldset[disabled] .btn-light.btn-bordered.active {
   background-color: transparent;
-  border-color: #737c92;
+  border-color: #c6cad1;
   box-shadow: none;
 }
 #filters .btn-light.btn-bordered .badge,
@@ -314,7 +314,7 @@ fieldset[disabled] .btn-light.btn-bordered.active {
 }
 #filters .btn-light.btn-muted,
 .btn-light.btn-muted {
-  color: #737c92;
+  color: #c6cad1;
   background-color: transparent;
   border-color: transparent;
 }
