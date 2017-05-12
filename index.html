@@ -2,11 +2,8 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>eRated - Marketplace BI</title>
-    <meta name="description" content="The ultimate business intelligence solution for e-commerce marketplaces">
-    <meta name="keywords" content="sellers, sellers Data, sellers performance, business intelligence, bi, insights, marketplaces, marketplace, increase online sales, marketplace seller, online seller, marketplace sales, increase sales, missing products, missing listings, market trends">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Kalto</title>
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700">
@@ -31,9 +28,6 @@
     <meta property="fb:admins" content="221443841390356"/>
 
     <link rel="stylesheet" href="styles/font-awesome.css">
-    <link rel="stylesheet" href="styles/owl.carousel.css">
-    <link rel="stylesheet" href="styles/owl.theme.css">
-    <link rel="stylesheet" href="styles/owl.transitions.css">
     <link rel="stylesheet" href="styles/slick.css">
     <link rel="stylesheet" href="styles/slick-theme.css">
     <link rel="stylesheet" href="styles/idangerous.swiper.css">
@@ -110,28 +104,16 @@
           <div class="sep-top-3x">
             <div class="container">
               <div class="section-title text-center">
-                <div id="splash-carousel" class="owl-theme mp">
+                <div id="splash-carousel" class=" mp">
                   <div class="background-section2">
                   <img class="bg" src="img/assets/bg.png" />
                   </div>
                 </div>
-                <div class="learn-more-control">
-                  <a href="#how-it-works" id="learn-more-link" mixpanel-name="learn_more_click">
-                    <div class="learn-more-container">
-                      <span class="learn-more-text">LEARN MORE</span>
-                      <img class="learn-more-arrow" src="img/assets/downarrowicon.png">
-                    </div>
-                  </a>
-                </div>
                 <div class="splash-text-wrapper">
-                  <div class="splash-text mp">
-                    <span class="big-text">
+                    <span class="slogan">
                      " Don't worry, <br/> just chill it "
                     </span>                    
-                    <a id="splash_request_demo" href="#marketplaces" mixpanel-name="request_demo_click" mixpanel-provider="splash_request_demo">
 
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -148,34 +130,43 @@
             <div data-wow-delay="0.2s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
               <img src="img/assets/benefits/icon1.png">
               <h3>Sur les pistes comme sous la couette</h3>
-              <p>
-                eRated automatically finds top sellers relevant to your marketplace based on your criteria and needs
-              </p>
+              <ul id="soleil" >
+                <li >Température max : 70°C</li>
+                <li >Durée : 5-10 min</li>
+              </ul>
             </div>
             <!-- End Chart item-->
             <!-- Start Chart item-->
             <div data-wow-delay="0.3s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
               <img src="img/assets/benefits/icon2.png">
-              <h3>Sur la plage comme sur votre terrasse</h3>
-              <p>
-                Unlock hidden opportunities based on your sellers' performance in your competitor marketplaces
-              </p>
+              <h3>Sur la plage comme </br>  sur la terrasse</h3>
+              <ul id="flocon" >
+                <li >Température min : 5°C</li>
+                <li >Durée : 5-10 min</li>
+              </ul>
             </div>
             <!-- End Chart item-->
             <!-- Start Chart item-->
             <div data-wow-delay="0.4s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
               <img src="img/assets/benefits/icon3.png">
               <h3>Sur mesures ou presque...</h3>
-              <p>Find missing products your marketplace needs and your sellers are already selling on other marketplaces</p>
+              <ul id="mug" >
+                <li >Taille : 25 x 7.5 mm</li>
+                <li >Capacité : 750 ml</li>
+                <li>Matériel : Acier inoxydable</li>
+              </ul>
             </div>
             <!-- End Chart item-->
             <!-- Start Chart item-->
             <div data-wow-delay="0.5s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
               <img src="img/assets/benefits/icon4.png">
-              <h3>Et bientôt sur ton étagère </h3>
-              <p>Super-charge your business with eRated's live market insights based on data from leading marketplaces</p>
+              <h3>Et bientôt </br>sur ton étagère </h3>
+              <ul id="etagerePuce">
+                <li >Paiement sécurisé</li>
+                <li >Paypal</li>
+                <li>Facture</li>
+              </ul>
             </div>
-            <!-- End Chart item-->
           </div>          
         </div>
       </section>
@@ -185,7 +176,15 @@
           <div class="container">
             <div class="section-title wow left-side  text-center">
               <h2>J'achète</h2>
-             <p> YOLO</p>
+                <div>
+                  <img  id="image" class="bg" src="img/assets/webThermosAchat.png" />
+                </div>
+              <div id="btAchete">
+                  J'en veux un !
+              </div>
+              <p id="prix">
+                34.90 CHF
+              </p>
             </div>
           </div>
         </div>
@@ -235,53 +234,29 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4 col-sm-6">
-                <div class="widget sep-top-lg"><img src="img/assets/logowhite.png" alt="" class="logo">
-                  <h6 class="upper widget-title sep-top-md" style="margin-left:10px;">Stay connected</h6>
+                <div class="widget sep-top-lg">
+                  <img src="img/assets/logowhite.png" alt="" class="logo">
+                  <h6 class="upper widget-title sep-top-md" style="margin-left:10px;">Reste connecté</h6>
                   <ul class="social-icon sep-top-xs" style="margin-left:10px;">
-                    <li><a class="fa fa-linkedin fa-lg" href="https://www.linkedin.com/company/5118822" mixpanel-name="footer_social_click" mixpanel-provider="linkedin_sc" id="linkedin_sc" target="_blank"></a></li>
-                    <li><a class="fa fa-twitter fa-lg" href="https://twitter.com/eRated_co" mixpanel-name="footer_social_click" mixpanel-provider="twitter_sc" id="twitter_sc" target="_blank"></a></li>
-                    <li><a class="fa fa-facebook fa-lg" href="https://www.facebook.com/erated.co" target="_blank" mixpanel-name="footer_social_click" id="facebook_sc" mixpanel-provider="facebook_sc"></a></li>
-                    <li><a class="fa fa-youtube fa-lg" href="https://www.youtube.com/channel/UCIz7HRxkA_A17Z8RjjcpwyA" target="_blank" mixpanel-name="footer_social_click" id="youtube_sc" mixpanel-provider="youtube_sc"></a></li>
+                    <li> <img src="img/assets/facebookshare.png"></li>
+                    <li> <img src="img/assets/twitter-logo-silhouette.png"></li>
+                    <li> <img src="img/assets/instagram-logo.png"></li>
                   </ul>
-                  <ul class="sep-top-xs">
-                    <li><small style="margin-left:10px;"><a href="mailto:info@erated.co">info@erated.co</a></small></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-4 col-xs-offset-4">
-                <div class="widget sep-top-lg">
-                  <h6 class="upper widget-title" style="margin-left:5px;">Explore</h6>
-                  <ul class="widget-address sep-top-xs">
-                    <li><i class="fa fa-arrow-circle-o-right fa-lg hidden-xs"></i><small><a href="/about.html" mixpanel-name="footer_about_click" id="footer_about_click">About eRated</a></small></li>
-                    <!-- <li><i class="fa fa-arrow-circle-o-right fa-lg hidden-xs"></i><small><a href="https://www.erated.co/faq.html" mixpanel-name="footer_faq_click" id="footer_faq_click">FAQ</a></small></li> -->
-                    <li><i class="fa fa-arrow-circle-o-right fa-lg hidden-xs"></i><small><a href="/jobs.html" mixpanel-name="footer_careers_click" id="footer_careers_click">Careers</a></small></li>
-                    <!-- <li><i class="fa fa-arrow-circle-o-right fa-lg hidden-xs"></i><small><a href="https://www.erated.co/press.html" mixpanel-name="footer_press_click" id="footer_press_click">Press</a></small></li> -->
-                    <!-- <li><i class="fa fa-arrow-circle-o-right fa-lg hidden-xs"></i><small><a href="http://blog.erated.co" mixpanel-name="footer_blog_click" id="footer_blog_click">Blog</a></small></li> -->
-                    <!-- <li><i class="fa fa-arrow-circle-o-right fa-lg hidden-xs"></i><small><a href="https://www.erated.co/ebay/index.html" mixpanel-name="footer_ebay_click" id="footer_ebay_click">eBay Sellers</a></small></li>
-                    <li><i class="fa fa-arrow-circle-o-right fa-lg hidden-xs"></i><small><a href="https://www.erated.co/plugins/wordpress/landing.html" mixpanel-name="footer_wordpress_click" id="footer_wordpress_click">Wordpress and WooCommerce Shops</a></small></li> -->           
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-6 col-xs-6 col-xs-offset-3 hidden-xs">
-                <div class="widget sep-top-lg">
-                  <h6 class="upper widget-title">Latest blog post</h6>
-                  <ul class="widget-post sep-top-xs">                    
-                    <li><span class="date-post">19<small class="upper">Nov</small></span><a href="//blog.erated.co/handmade-at-amazon/" target="_blank" class="title-post" mixpanel-name="footer_blog_article" mixpanel-provider="blog_aticle2" id="blog_aticle2">Handmade at Amazon: A New Home for Etsy Sellers?</a><p></p></li>
-                    <li><span class="date-post">30<small class="upper">Sep</small></span><a href="//blog.erated.co/sell-on-ebay-etsy-amazon-and-shopify-then-you-need-these-5-apps/" target="_blank" class="title-post" mixpanel-name="footer_blog_article" mixpanel-provider="blog_aticle3" id="blog_aticle3">Sell on eBay, Etsy, Amazon, and Shopify? Then you need these 5 apps!</a></li>
-                    <li><span class="date-post">24<small class="upper">Aug</small></span><a href="//blog.erated.co/5-leading-e-commerce-marketplaces-in-france/" target="_blank" class="title-post" mixpanel-name="footer_blog_article" mixpanel-provider="blog_aticle1" id="blog_aticle1">5 Leading E-Commerce Marketplaces in France You Should Try!</a></li>
-                  </ul>
-                </div>
-              </div>
+                  <ul class="sep-top-xs marge">
+                    <li><small style="margin-left:10px;"><a href="mailto:info@kalto.ch">info@kalto.ch</a></small></li>
 
-            </div>
+                  </ul>
+                </div>
+              </div>
           </div>
         </div>
         <div class="copyright sep-top-xs sep-bottom-xs">
           <div class="container">
             <div class="row">
-              <div class="col-md-12"><small>&copy;<span class="date">2016</span> eRated, Inc. <a href="http://www.erated.co/privacy.html">Privacy Policy</a> , <a href="http://www.erated.co/terms.html">Terms of Service</a><a href="//mixpanel.com/f/partner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="//cdn.mxpnl.com/site_media//images/partner/badge_light.png" alt="Mobile Analytics" class="mixpanel-tag"/></a></small></div>
+              <div class="col-md-12"><small>&copy;<span class="date">2017</span> Kalto, Inc.Privacy Policy Terms of Service</small></div>
             </div>
           </div>
+        </div>
         </div>
       </footer>
       <!-- End Footer section-->
@@ -301,7 +276,6 @@
     <script type="text/javascript" src="scripts/vendor/jquery.js"></script>
     <script type="text/javascript" src="scripts/vendor/jquery.inview.min.js"></script>
     <script type="text/javascript" src="scripts/vendor/queryloader2.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/owl.carousel.min.js"></script>
     <script type="text/javascript" src="scripts/vendor/slick.js"></script>
     <script type="text/javascript" src="scripts/vendor/jquery.ba-cond.min.js"></script>
     <script type="text/javascript" src="scripts/vendor/jquery.slitslider.js"></script>
