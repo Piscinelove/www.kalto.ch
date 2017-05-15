@@ -45,6 +45,7 @@
     display: block;
     font-size: 50px;
     font-family: Carosello;
+    margin-left: 155px;
 }
 
 #image{
@@ -68,6 +69,21 @@
     margin-right: 180px;
 }
 
+#btSubmit{
+    background-color: #22313F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 2px;
+    float:right;
+    margin-top:50px;
+    margin-right: 493px;
+}
+
 #prix{
     text-align: right;
     margin-top:250px;
@@ -76,4 +92,15 @@
 
 #facebook{
     content: "\f09a";
+}
+
+#social{
+    position: absolute;
+    top: 7px;
+    left: 1000px;
+}
+
+#text1{
+    font-size: 2em;
+    margin-top: 100px;
 }

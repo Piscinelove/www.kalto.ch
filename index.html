@@ -89,18 +89,18 @@
 
             <button type="button" class="navbar-toggle"><i class="fa fa-close fa-lg"></i></button>
             <ul id="one-page-menu" role="menu" class="nav navbar-nav navbar-right">
-              <li><a id="accueil_link" href="#benefits" mixpanel-name="accueil_click" >Accueil</a></li>
-              <li><a id="description_link" href="#benefits" mixpanel-name="description_click" >Description</a></li>
-              <li><a id="achat_link" href="#benefits" mixpanel-name="achat_click" >J'achète !</a></li>
-              <li><a id="histoire_link" href="#benefits" mixpanel-name="histoire_click" >Notre histoire</a></li>
-              <li><a id="contact_link" href="#benefits" mixpanel-name="contact_click" >Contact</a></li>
+              <li><a id="accueil_link" href="#section1" mixpanel-name="accueil_click" >Accueil</a></li>
+              <li><a id="description_link" href="#section2" mixpanel-name="description_click" >Description</a></li>
+              <li><a id="achat_link" href="#section3" mixpanel-name="achat_click" >J'achète !</a></li>
+              <li><a id="histoire_link" href="#section4" mixpanel-name="histoire_click" >Notre histoire</a></li>
+              <li><a id="contact_link" href="#section5" mixpanel-name="contact_click" >Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
 
       <section id="cover" data-wow-delay="0.2s" class="mp light wow fadeInUp">
-        <section class="header-section fading-title parallax sep-top-1x " data-ref="carry">
+        <section id="section1" class="header-section fading-title parallax sep-top-1x " data-ref="carry">
           <div class="sep-top-3x">
             <div class="container">
               <div class="section-title text-center">
@@ -109,11 +109,17 @@
                   <img class="bg" src="img/assets/bg.png" />
                   </div>
                 </div>
-                <div class="splash-text-wrapper">
+                <div class="splash-text-wrapper" style="margin-left: -150px;">
                     <span class="slogan">
                      " Don't worry, <br/> just chill it "
-                    </span>                    
-
+                    </span>
+                    <div id="text1">
+                        <ul>
+                            <li style="margin-bottom: 15px;">Kalto vous offre un produit de qualité et innovant</li>
+                            <li style="margin-bottom: 15px;">Transportable et design</li>
+                            <li style="margin-bottom: 15px;">Pour vous rafraîchir et vous réchauffer</li>
+                        </ul>
+                    </div>
                 </div>
               </div>
             </div>
@@ -122,7 +128,7 @@
       </section>     
       
       <section data-wow-delay="0.4s" class="background-section3 sep-top-lg sep-bottom-lg light wow fadeInUp animated" mixpanel="inview scrolled_to_benefits">
-        <div class="container">
+        <div id="section2" class="container">
           <h2 class="text-center">Description</h2>
           <h3 class="text-center">Kalto vous offre un produit de qualité et innovant pour satisfaire vos besoins en toutes saisons.</h3>
           <div class="row">
@@ -171,7 +177,7 @@
         </div>
       </section>
 
-      <section data-wow-delay="0.4s" class="mp benefits" mixpanel="inview">
+      <section id="section3" data-wow-delay="0.4s" class="mp benefits" mixpanel="inview">
         <div class="sep-top-lg sep-bottom-lg">
           <div class="container">
             <div class="section-title wow left-side  text-center">
@@ -190,7 +196,7 @@
         </div>
       </section>
 
-      <section data-wow-delay="0.4s" class="mp background-section3" mixpanel="inview">
+      <section id="section4" data-wow-delay="0.4s" class="mp background-section3" mixpanel="inview">
         <div class="sep-top-lg sep-bottom-lg">
           <div class="container">
             <div class="section-title wow left-side  text-center">
@@ -207,7 +213,7 @@
       <!-- Start About section-->      
 
       <section id="marketplaces" class="mp benefits" mixpanel="inview scrolled_to_contact_us">
-        <div class="sep-top-lg sep-bottom-lg">
+        <div id="section5" class="sep-top-lg sep-bottom-lg">
           <div class="container">
             <div class="section-title wow left-side  text-center">
               <h2>Contacte-nous</h2>
@@ -218,8 +224,9 @@
                 <span class="error-response name">Entre ton nom</span>
                 <input type="text" placeholder="TON E-MAIL" class="form-email" />
                 <span class="error-response email">Entre une adresse e-mail valide</span>
+                <button id="btSubmit">VALIDER</button>
               </div>
-            </div>            
+            </div>
           </div>
         </div>
       </section>
@@ -236,16 +243,23 @@
               <div class="col-md-4 col-sm-6">
                 <div class="widget sep-top-lg">
                   <img src="img/assets/logowhite.png" alt="" class="logo">
+                  <div id="social">
                   <h6 class="upper widget-title sep-top-md" style="margin-left:10px;">Reste connecté</h6>
                   <ul class="social-icon sep-top-xs" style="margin-left:10px;">
-                    <li> <img src="img/assets/facebookshare.png"></li>
+                      <a  href="https://www.facebook.com/Kalto-645165535678456/?ref=bookmarks">
+                    <li> <img src="img/assets/facebookshare.png"> </li>
+                      </a>
+                      <a href="https://twitter.com/kalties?lang=fr"/>
                     <li> <img src="img/assets/twitter-logo-silhouette.png"></li>
+                      </a>
+                      <a href="https://www.instagram.com/kalties/"/>
                     <li> <img src="img/assets/instagram-logo.png"></li>
+                      </a>
                   </ul>
                   <ul class="sep-top-xs marge">
-                    <li><small style="margin-left:10px;"><a href="mailto:info@kalto.ch">info@kalto.ch</a></small></li>
-
+                    <li><small style="margin-left:10px; font-size: 1.5em;"><a href="mailto:info@kalto.ch">info@kalto.ch</a></small></li>
                   </ul>
+                  </div>
                 </div>
               </div>
           </div>

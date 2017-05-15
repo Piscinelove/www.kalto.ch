@@ -71,7 +71,7 @@ blockquote .bold-quote {
   font-size: 1.3em;
 }
 h6 {
-  font-size: 0.75em;
+  font-size: 1.5em;
 }
 p {
   font-size: 1.375em;
@@ -2275,7 +2275,6 @@ label.error {
   height: auto;
   line-height: 1;
   width: auto;
-  min-width: auto;
 }
 /* 19. Footer
    ---------------------------------------------------------------------------*/
@@ -2284,7 +2283,8 @@ label.error {
   font-size: 90%;
 }
 #footer .logo {
-  max-height: 41px;
+  max-height: 80px;
+  margin-bottom: 50px;
 }
 #footer .widget-title {
   margin: 0;
