@@ -39,6 +39,8 @@
     <link id="primary_color_scheme" rel="stylesheet" href="styles/theme_meadow.css">
     <link rel="stylesheet" href="styles/kalto.css">
     <script src="scripts/vendor/modernizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script rel="javascript" href="js/kalto.js"></script>
 
     <!-- start Mixpanel -->
     <script type="text/javascript">
@@ -46,7 +48,20 @@
         for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
         mixpanel.init("38b71a2628028bb9a7d6f3ea80ae9038",{},"app");
     </script>
-    <!-- end Mixpanel -->    
+    <!-- end Mixpanel -->
+
+    <script>
+        $(document).ready(function() {
+
+            $('.scrollTo').click( function() { // Au clic sur un ï¿½lï¿½ment
+                var section = $(this).attr('href'); // Page cible
+                var speed = 700; // Durï¿½e de l'animation (en ms)
+                $('html, body').animate( { scrollTop: $(section).offset().top }, speed ); // Go
+                return false;
+            });
+        });
+
+    </script>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -83,17 +98,17 @@
       <nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle"><i class="fa fa-align-justify fa-lg"></i></button><a href="/" class="navbar-brand"><img src="img/assets/logowhite.png" alt="" class="logo-white"><img src="img/assets/logo.png" alt="" class="logo-dark"></a>
+            <button type="button" class="navbar-toggle"><i class="fa fa-align-justify fa-lg"></i></button><a href="#section1" class="navbar-brand scrollTo"><img src="img/assets/logowhite.png" alt="" class="logo-white"><img src="img/assets/logo.png" alt="" class="logo-dark"></a>
           </div>
           <div class="navbar-collapse collapse">
 
             <button type="button" class="navbar-toggle"><i class="fa fa-close fa-lg"></i></button>
             <ul id="one-page-menu" role="menu" class="nav navbar-nav navbar-right">
-              <li><a id="accueil_link" href="#section1" mixpanel-name="accueil_click" >Accueil</a></li>
-              <li><a id="description_link" href="#section2" mixpanel-name="description_click" >Description</a></li>
-              <li><a id="achat_link" href="#section3" mixpanel-name="achat_click" >J'achète !</a></li>
-              <li><a id="histoire_link" href="#section4" mixpanel-name="histoire_click" >Notre histoire</a></li>
-              <li><a id="contact_link" href="#section5" mixpanel-name="contact_click" >Contact</a></li>
+              <li><a id="accueil_link" href="#section1" mixpanel-name="accueil_click" class="scrollTo" >Accueil</a></li>
+              <li><a id="description_link" href="#section2" mixpanel-name="description_click" class="scrollTo" >Description</a></li>
+              <li><a id="achat_link" href="#section3" mixpanel-name="achat_click" class="scrollTo">J'achète !</a></li>
+              <li><a id="histoire_link" href="#section4" mixpanel-name="histoire_click" class="scrollTo" >Notre histoire</a></li>
+              <li><a id="contact_link" href="#section5" mixpanel-name="contact_click" class="scrollTo" >Contact</a></li>
             </ul>
           </div>
         </div>
