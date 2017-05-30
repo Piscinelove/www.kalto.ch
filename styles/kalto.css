@@ -75,6 +75,8 @@
     text-decoration: none;
     font-size: 25px;
     border-radius: 2px;
+    width: 54%;
+    margin-top: 30px;
 }
 
 #btSubmit{
@@ -93,9 +95,9 @@
 }
 
 #prix{
-    text-align: right;
-    margin-top:250px;
-    margin-right: 180px;
+    margin-top: 30px;
+    font-size: large;
+    font-weight: bolder;
 }
 
 #facebook{
@@ -111,4 +113,41 @@
 #text1{
     font-size: 2em;
     margin-top: 100px;
+}
+
+.btn-color
+{
+    width: 56px ;
+    height:56px;
+    border:none;
+}
+
+.color1
+{
+    background-color: #CE5548;
+}
+
+.color2
+{
+    background-color: #2C9296;
+}
+
+.color3
+{
+    background-color: #80BC9C;
+}
+
+.color4
+{
+    background-color: #CB647E;
+}
+
+.color5
+{
+    background-color: #000000;
+}
+
+.vertical-align
+{
+    margin-top: 10%;
 }
