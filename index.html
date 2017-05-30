@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html class="no-js">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Kalto</title>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700">
+    <link rel="stylesheet"
+          href="//fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
     <link rel="shortcut icon" type="image/png" href="//www.erated.co/favicon.png">
@@ -19,12 +20,12 @@
     <meta name="twitter:image" content="http://www.erated.co/img/facebookshare.jpg">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="eRated" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://erated.co/" />
-    <meta property="og:image" content="http://www.erated.co/img/facebookshare.jpg" />
-    <meta property="og:description" content="The ultimate business intelligence platform for e-commerce marketplaces" />
-    <meta property="og:site_name" content="eRated" />
+    <meta property="og:title" content="eRated"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://erated.co/"/>
+    <meta property="og:image" content="http://www.erated.co/img/facebookshare.jpg"/>
+    <meta property="og:description" content="The ultimate business intelligence platform for e-commerce marketplaces"/>
+    <meta property="og:site_name" content="eRated"/>
     <meta property="fb:admins" content="221443841390356"/>
 
     <link rel="stylesheet" href="styles/font-awesome.css">
@@ -44,39 +45,76 @@
 
     <!-- start Mixpanel -->
     <script type="text/javascript">
-      (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-        for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-        mixpanel.init("38b71a2628028bb9a7d6f3ea80ae9038",{},"app");
+        (function (f, b) {
+            if (!b.__SV) {
+                var a, e, i, g;
+                window.mixpanel = b;
+                b._i = [];
+                b.init = function (a, e, d) {
+                    function f(b, h) {
+                        var a = h.split(".");
+                        2 == a.length && (b = b[a[0]], h = a[1]);
+                        b[h] = function () {
+                            b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                        }
+                    }
+
+                    var c = b;
+                    "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+                    c.people = c.people || [];
+                    c.toString = function (b) {
+                        var a = "mixpanel";
+                        "mixpanel" !== d && (a += "." + d);
+                        b || (a += " (stub)");
+                        return a
+                    };
+                    c.people.toString = function () {
+                        return c.toString(1) + ".people (stub)"
+                    };
+                    i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (g = 0; g < i.length; g++)f(c, i[g]);
+                    b._i.push([a, e, d])
+                };
+                b.__SV = 1.2;
+                a = f.createElement("script");
+                a.type = "text/javascript";
+                a.async = !0;
+                a.src = "//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";
+                e = f.getElementsByTagName("script")[0];
+                e.parentNode.insertBefore(a, e)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("38b71a2628028bb9a7d6f3ea80ae9038", {}, "app");
     </script>
     <!-- end Mixpanel -->
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
-            $('.scrollTo').click( function() { // Au clic sur un ï¿½lï¿½ment
+            $('.scrollTo').click(function () { // Au clic sur un ï¿½lï¿½ment
                 var section = $(this).attr('href'); // Page cible
                 var speed = 700; // Durï¿½e de l'animation (en ms)
-                $('html, body').animate( { scrollTop: $(section).offset().top }, speed ); // Go
+                $('html, body').animate({scrollTop: $(section).offset().top}, speed); // Go
                 return false;
             });
 
-            $('#color1').click(function() {
+            $('#color1').click(function () {
                 $('#image').attr('src', 'img/assets/thermosRed.png');
             });
 
-            $('#color2').click(function() {
+            $('#color2').click(function () {
                 $('#image').attr('src', 'img/assets/thermosBlue.png');
             });
 
-            $('#color3').click(function() {
+            $('#color3').click(function () {
                 $('#image').attr('src', 'img/assets/thermosGreen.png');
             });
 
-            $('#color4').click(function() {
+            $('#color4').click(function () {
                 $('#image').attr('src', 'img/assets/thermosPink.png');
             });
 
-            $('#color5').click(function() {
+            $('#color5').click(function () {
                 $('#image').attr('src', 'img/assets/thermosBlack.png');
             });
 
@@ -86,359 +124,406 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','//connect.facebook.net/en_US/fbevents.js');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq)return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
 
-    fbq('init', '1681402398764905');
-    fbq('track', "PageView");</script>
+        fbq('init', '1681402398764905');
+        fbq('track', "PageView");</script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1681402398764905&ev=PageView&noscript=1"
+                   src="https://www.facebook.com/tr?id=1681402398764905&ev=PageView&noscript=1"
     /></noscript>
-<!-- End Facebook Pixel Code -->
+    <!-- End Facebook Pixel Code -->
     <!-- Hotjar Tracking Code for www.erated.co -->
     <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:56603,hjsv:5};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+            h._hjSettings = {hjid: 56603, hjsv: 5};
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
             a.appendChild(r);
-        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+        })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-  </head>
-  <body>
-    <div id="load"></div><!--[if lt IE 9]>
-    <p class="browsehappy">You are using an strong outdated browser. <br>Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div class="page">
-      <!-- Start Nav Section-->
-      <nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard">
+</head>
+<body>
+<div id="load"></div>
+<!--[if lt IE 9]>
+<p class="browsehappy">You are using an strong outdated browser. <br>Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="page">
+    <!-- Start Nav Section-->
+    <nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard">
         <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle"><i class="fa fa-align-justify fa-lg"></i></button><a href="#section1" class="navbar-brand scrollTo"><img src="img/assets/logowhite.png" alt="" class="logo-white"><img src="img/assets/logo.png" alt="" class="logo-dark"></a>
-          </div>
-          <div class="navbar-collapse collapse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle"><i class="fa fa-align-justify fa-lg"></i></button>
+                <a href="#section1" class="navbar-brand scrollTo"><img src="img/assets/logowhite.png" alt=""
+                                                                       class="logo-white"><img src="img/assets/logo.png"
+                                                                                               alt="" class="logo-dark"></a>
+            </div>
+            <div class="navbar-collapse collapse">
 
-            <button type="button" class="navbar-toggle"><i class="fa fa-close fa-lg"></i></button>
-            <ul id="one-page-menu" role="menu" class="nav navbar-nav navbar-right">
-              <li><a id="accueil_link" href="#section1" mixpanel-name="accueil_click" class="scrollTo" >Accueil</a></li>
-              <li><a id="description_link" href="#section2" mixpanel-name="description_click" class="scrollTo" >Description</a></li>
-              <li><a id="achat_link" href="#section3" mixpanel-name="achat_click" class="scrollTo">J'achète !</a></li>
-              <li><a id="histoire_link" href="#section4" mixpanel-name="histoire_click" class="scrollTo" >Notre histoire</a></li>
-              <li><a id="contact_link" href="#section5" mixpanel-name="contact_click" class="scrollTo" >Contact</a></li>
-            </ul>
-          </div>
+                <button type="button" class="navbar-toggle"><i class="fa fa-close fa-lg"></i></button>
+                <ul id="one-page-menu" role="menu" class="nav navbar-nav navbar-right">
+                    <li><a id="accueil_link" href="#section1" mixpanel-name="accueil_click" class="scrollTo">Accueil</a>
+                    </li>
+                    <li><a id="description_link" href="#section2" mixpanel-name="description_click" class="scrollTo">Description</a>
+                    </li>
+                    <li><a id="achat_link" href="#section3" mixpanel-name="achat_click" class="scrollTo">J'achète !</a>
+                    </li>
+                    <li><a id="histoire_link" href="#section4" mixpanel-name="histoire_click" class="scrollTo">Notre
+                        histoire</a></li>
+                    <li><a id="contact_link" href="#section5" mixpanel-name="contact_click" class="scrollTo">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-      <section id="cover" data-wow-delay="0.2s" class="mp light wow fadeInUp">
+    <section id="cover" data-wow-delay="0.2s" class="mp light wow fadeInUp">
         <section id="section1" class="header-section fading-title parallax sep-top-1x " data-ref="carry">
-          <div class="sep-top-3x">
-            <div class="container">
-              <div class="section-title text-center">
-                <div id="splash-carousel" class=" mp">
-                  <div class="background-section2">
-                  <img class="bg" src="img/assets/bg.png" />
-                  </div>
-                </div>
-                <div class="splash-text-wrapper" style="margin-left: -150px;">
+            <div class="sep-top-3x">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <div id="splash-carousel" class=" mp">
+                            <div class="background-section2">
+                                <img class="bg" src="img/assets/bg.png"/>
+                            </div>
+                        </div>
+                        <div class="splash-text-wrapper" style="margin-left: -150px;">
                     <span class="slogan">
                      " Don't worry, <br/> just chill it "
                     </span>
-                    <div id="text1">
-                        <ul>
-                            <li style="margin-bottom: 15px;">Kalto vous offre un produit de qualité et innovant</li>
-                            <li style="margin-bottom: 15px;">Transportable et design</li>
-                            <li style="margin-bottom: 15px;">Pour vous rafraîchir et vous réchauffer</li>
-                        </ul>
+                            <div id="text1">
+                                <ul class="bullet">
+                                    <li style="margin-bottom: 15px;">Kalto vous offre un produit de qualité et
+                                        innovant
+                                    </li>
+                                    <li style="margin-bottom: 15px;">Transportable et design</li>
+                                    <li style="margin-bottom: 15px;">Pour vous rafraîchir et vous réchauffer</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
-      </section>     
-      
-      <section cdata-wow-delay="0.4s" class="background-section3 sep-top-lg sep-bottom-lg light wow fadeInUp animated full" mixpanel="inview scrolled_to_benefits">
-        <div id="section2" class="container content">
-          <h2 class="text-center">Description</h2>
-          <h3 class="text-center">Kalto vous offre un produit de qualité et innovant pour satisfaire vos besoins en toutes saisons.</h3>
-          <div class="row">
-            <!-- Start Chart item-->
-            <div data-wow-delay="0.2s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
-              <img src="img/assets/benefits/icon1.png">
-              <h3>Sur les pistes comme sous la couette</h3>
-              <ul id="soleil" >
-                <li >Température max : 70°C</li>
-                <li >Durée : 5-10 min</li>
-              </ul>
-            </div>
-            <!-- End Chart item-->
-            <!-- Start Chart item-->
-            <div data-wow-delay="0.3s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
-              <img src="img/assets/benefits/icon2.png">
-              <h3>Sur la plage comme </br>  sur la terrasse</h3>
-              <ul id="flocon" >
-                <li >Température min : 5°C</li>
-                <li >Durée : 5-10 min</li>
-              </ul>
-            </div>
-            <!-- End Chart item-->
-            <!-- Start Chart item-->
-            <div data-wow-delay="0.4s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
-              <img src="img/assets/benefits/icon3.png">
-              <h3>Sur mesures ou presque...</h3>
-              <ul id="mug" >
-                <li >Taille : 25 x 7.5 mm</li>
-                <li >Capacité : 750 ml</li>
-                <li>Matériel : Acier inoxydable</li>
-              </ul>
-            </div>
-            <!-- End Chart item-->
-            <!-- Start Chart item-->
-            <div data-wow-delay="0.5s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
-              <img src="img/assets/benefits/icon4.png">
-              <h3>Et bientôt </br>sur ton étagère </h3>
-              <ul id="etagerePuce">
-                <li >Paiement sécurisé</li>
-                <li >Paypal</li>
-                <li>Facture</li>
-              </ul>
-            </div>
-          </div>          
-        </div>
-      </section>
+    </section>
 
-      <section id="section3" data-wow-delay="0.4s" class="mp benefits full" mixpanel="inview">
-          <div class="container content">
-              <h2 class="text-center">J'achète</h2>
-              <div class="row">
+    <section cdata-wow-delay="0.4s"
+             class="background-section3 sep-top-lg sep-bottom-lg light wow fadeInUp animated full"
+             mixpanel="inview scrolled_to_benefits">
+        <div id="section2" class="container content">
+            <h2 class="text-center">Description</h2>
+            <h3 class="text-center">Kalto vous offre un produit de qualité et innovant pour satisfaire vos besoins en
+                toutes saisons.</h3>
+            <div class="row">
+                <!-- Start Chart item-->
+                <div data-wow-delay="0.2s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
+                    <img src="img/assets/benefits/icon1.png">
+                    <h3>Sur les pistes comme sous la couette</h3>
+                    <ul id="soleil">
+                        <li>Température max : 70°C</li>
+                        <li>Durée : 5-10 min</li>
+                    </ul>
+                </div>
+                <!-- End Chart item-->
+                <!-- Start Chart item-->
+                <div data-wow-delay="0.3s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
+                    <img src="img/assets/benefits/icon2.png">
+                    <h3>Sur la plage comme </br>  sur la terrasse</h3>
+                    <ul id="flocon">
+                        <li>Température min : 5°C</li>
+                        <li>Durée : 5-10 min</li>
+                    </ul>
+                </div>
+                <!-- End Chart item-->
+                <!-- Start Chart item-->
+                <div data-wow-delay="0.4s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
+                    <img src="img/assets/benefits/icon3.png">
+                    <h3>Sur mesures ou presque...</h3>
+                    <ul id="mug">
+                        <li>Taille : 25 x 7.5 mm</li>
+                        <li>Capacité : 750 ml</li>
+                        <li>Matériel : Acier inoxydable</li>
+                    </ul>
+                </div>
+                <!-- End Chart item-->
+                <!-- Start Chart item-->
+                <div data-wow-delay="0.5s" class="col-md-3 text-center sep-top-md light wow fadeInUp animated">
+                    <img src="img/assets/benefits/icon4.png">
+                    <h3>Et bientôt </br>sur ton étagère </h3>
+                    <ul id="etagerePuce">
+                        <li>Paiement sécurisé</li>
+                        <li>Paypal</li>
+                        <li>Facture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3" data-wow-delay="0.4s" class="mp benefits full" mixpanel="inview">
+        <div class="container content">
+            <h2 class="text-center">J'achète</h2>
+            <div class="row">
                 <div class="col-lg-8">
-                  <img  id="image" class="bg img-responsive" src="img/assets/thermosBlack.png" />
+                    <img id="image" class="bg img-responsive" src="img/assets/thermosBlack.png"/>
                 </div>
                 <div class="col-lg-4 text-center vertical-align">
                     <div class="row">
-                      <button id="color1" class="btn-color color1"></button>
-                      <button id="color2" class=" btn-color color2"></button>
-                      <button id="color3" class=" btn-color color3"></button>
-                      <button id="color4" class=" btn-color color4"></button>
-                      <button id="color5" class=" btn-color color5"></button>
+                        <button id="color1" class="btn-color color1"></button>
+                        <button id="color2" class=" btn-color color2"></button>
+                        <button id="color3" class=" btn-color color3"></button>
+                        <button id="color4" class=" btn-color color4"></button>
+                        <button id="color5" class=" btn-color color5"></button>
                     </div>
-                  <div class="row text-center">
-                    <p id="prix">
-                      34.90 CHF
-                    </p>
-                  </div>
-                  <div class="row">
-                    <button class="btn btn-primary" id="btAchete">
-                      J'en veux un !
-                    </button>
+                    <div class="row text-center">
+                        <p id="prix">
+                            34.90 CHF
+                        </p>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-primary" id="btAchete">
+                            J'en veux un !
+                        </button>
 
-                  </div>
+                    </div>
                 </div>
-              </div>
-
             </div>
-      </section>
 
-      <section id="section4" data-wow-delay="0.4s" class="mp background-section3 full" mixpanel="inview">
-        <div class="sep-top-lg sep-bottom-lg">
-          <div class="container content">
-            <div class="section-title wow left-side  text-center">
-              <h2>Notre histoire</h2>
-              <p>Notre équipe d’exception est composée d’experts de la boisson chaude et froide. Nous avons </p>
-              <p>plusieurs fois eu la déception de boire notre café froid avant une présentation ennuyeuse et</p>
-              <p>le regret d’un thé en pleine canicule. Nous avons décidé de remédier à cette situation</p>
-              <p>et avons pris les choses en main.</p>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Start About section-->      
+    <section id="section4" data-wow-delay="0.4s" class="mp background-section3 full" mixpanel="inview">
+        <div class="container content text-center">
+            <h2 class="history">Notre histoire</h2>
+            <p>Notre équipe d’exception est composée d’experts de la boisson chaude et froide. Nous avons </p>
+            <p>plusieurs fois eu la déception de boire notre café froid avant une présentation ennuyeuse et</p>
+            <p>le regret d’un thé en pleine canicule. Nous avons décidé de remédier à cette situation</p>
+            <p>et avons pris les choses en main.</p>
+        </div>
+    </section>
 
-      <section id="marketplaces" class="mp benefits full" mixpanel="inview scrolled_to_contact_us">
-        <div id="section5" class="sep-top-lg sep-bottom-lg">
-          <div class="container content">
-            <div class="section-title wow left-side  text-center">
-              <h2>Contacte-nous</h2>
-              <p>Tu as des questions à propos de notre produit ou des problèmes pour le commander ?</p>
-              <p>Laisse ton message, ainsi que ton adresse e-mail et notre équipe te répondra dès que possible.</p>
-              <div>
-                <input type="text" placeholder="TON NOM" class="form-name" />
+    <!-- Start About section-->
+
+    <section id="marketplaces" class="mp benefits full" mixpanel="inview scrolled_to_contact_us">
+        <div class="container content text-center">
+            <div class="row contact">
+                <h2>Contacte-nous</h2>
+            </div>
+            <div class="row contact-text">
+                <p>Tu as des questions à propos de notre produit ou des problèmes pour le commander ?</p>
+                <p>Laisse ton message, ainsi que ton adresse e-mail et notre équipe te répondra dès que possible.</p>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="TON NOM" class="form-name contact-form"/>
                 <span class="error-response name">Entre ton nom</span>
-                <input type="text" placeholder="TON E-MAIL" class="form-email" />
+            </div>
+            <div class="row">
+                <input type="text" placeholder="TON E-MAIL" class="form-email contact-form"/>
                 <span class="error-response email">Entre une adresse e-mail valide</span>
+            </div>
+            <div class="row text-center">
                 <button id="btSubmit">VALIDER</button>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
 
-      <!-- End Parallax section-->
-      <!-- End Home Section-->
-      <!-- End call to action section-->
-      <!-- Start Footer section-->
-      <footer data-wow-delay="0.4s" class="light wow fadeInUp" id="footer" mixpanel="inview scrolled_to_footer">
+    <!-- End Parallax section-->
+    <!-- End Home Section-->
+    <!-- End call to action section-->
+    <!-- Start Footer section-->
+    <footer data-wow-delay="0.4s" class="light wow fadeInUp" id="footer" mixpanel="inview scrolled_to_footer">
         <div class="inner sep-bottom-md">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 col-sm-6">
-                <div class="widget sep-top-lg">
-                  <img src="img/assets/logowhite.png" alt="" class="logo">
-                  <div id="social">
-                  <h6 class="upper widget-title sep-top-md" style="margin-left:10px;">Reste connecté</h6>
-                  <ul class="social-icon sep-top-xs" style="margin-left:10px;">
-                      <a  href="https://www.facebook.com/Kalto-645165535678456/?ref=bookmarks">
-                    <li> <img src="img/assets/facebookshare.png"> </li>
-                      </a>
-                      <a href="https://twitter.com/kalties?lang=fr"/>
-                    <li> <img src="img/assets/twitter-logo-silhouette.png"></li>
-                      </a>
-                      <a href="https://www.instagram.com/kalties/"/>
-                    <li> <img src="img/assets/instagram-logo.png"></li>
-                      </a>
-                  </ul>
-                  <ul class="sep-top-xs marge">
-                    <li><small style="margin-left:10px; font-size: 1.5em;"><a href="mailto:info@kalto.ch">info@kalto.ch</a></small></li>
-                  </ul>
-                  </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="widget sep-top-lg">
+                            <img src="img/assets/logowhite.png" alt="" class="logo">
+                            <div id="social">
+                                <h6 class="upper widget-title sep-top-md" style="margin-left:10px;">Reste connecté</h6>
+                                <ul class="social-icon sep-top-xs" style="margin-left:10px;">
+                                    <a href="https://www.facebook.com/Kalto-645165535678456/?ref=bookmarks">
+                                        <li><img src="img/assets/facebookshare.png"></li>
+                                    </a>
+                                    <a href="https://twitter.com/kalties?lang=fr"/>
+                                    <li><img src="img/assets/twitter-logo-silhouette.png"></li>
+                                    </a>
+                                    <a href="https://www.instagram.com/kalties/"/>
+                                    <li><img src="img/assets/instagram-logo.png"></li>
+                                    </a>
+                                </ul>
+                                <ul class="sep-top-xs marge">
+                                    <li>
+                                        <small style="margin-left:10px; font-size: 1.5em;"><a
+                                                href="mailto:info@kalto.ch">info@kalto.ch</a></small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-          </div>
-        </div>
-        <div class="copyright sep-top-xs sep-bottom-xs">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12"><small>&copy;<span class="date">2017</span> Kalto, Inc.Privacy Policy Terms of Service</small></div>
             </div>
-          </div>
+            <div class="copyright sep-top-xs sep-bottom-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <small>&copy;<span class="date">2017</span> Kalto, Inc.Privacy Policy Terms of Service
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-      </footer>
-      <!-- End Footer section-->
-      <!--<div id="back_to_top" class="text-center hidden-xs"><a href="#" class="fa fa-play fa-lg" style="color: #a288d1;" data-toggle="modal" data-target="#videoModal" mixpanel-name="video_play_click"></a><h5>Play Video</h5></div>-->
-      <div class="modal fade" id="videoModal" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    </footer>
+    <!-- End Footer section-->
+    <!--<div id="back_to_top" class="text-center hidden-xs"><a href="#" class="fa fa-play fa-lg" style="color: #a288d1;" data-toggle="modal" data-target="#videoModal" mixpanel-name="video_play_click"></a><h5>Play Video</h5></div>-->
+    <div class="modal fade" id="videoModal" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
+            <div class="modal-content">
 
-            <div class="modal-body">
-            <a class="fa fa-times fa-md"></a>
-              <iframe id="eratedVideo" width="100" height="60" src="//www.youtube.com/embed/sfwM4qd1rhY" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div><!-- /.modal-content -->
+                <div class="modal-body">
+                    <a class="fa fa-times fa-md"></a>
+                    <iframe id="eratedVideo" width="100" height="60" src="//www.youtube.com/embed/sfwM4qd1rhY"
+                            frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
-    </div>
-    <script type="text/javascript" src="scripts/vendor/jquery.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.inview.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/queryloader2.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/slick.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.ba-cond.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.slitslider.js"></script>
-    <script type="text/javascript" src="scripts/vendor/idangerous.swiper.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.countTo.js"></script>
-    <script type="text/javascript" src="scripts/vendor/TweenMax.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/ScrollToPlugin.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.scrollmagic.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.easypiechart.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.validate.js"></script>
-    <script type="text/javascript" src="scripts/vendor/wow.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.placeholder.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.easing.1.3.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.waitforimages.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="scripts/vendor/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.fillparent.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/raphael-min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/bootstrap.js"></script>
-    <script type="text/javascript" src="scripts/vendor/jquery.bootstrap-touchspin.min.js"></script>
-    <script type="text/javascript" src="scripts/vendor/bootstrap-slider.js"></script>
-    <script type="text/javascript" src="scripts/vendor/bootstrap-rating-input.js"></script>
-    <script type="text/javascript" src="scripts/vendor/bootstrap-hover-dropdown.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.gmap.min.js"></script>
-    <script type="text/javascript" src="scripts/circle_diagram.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        function getMixpanelData(el){
-          var num_attr = el.attributes.length;
-          var attrs = [];
-          for (var i = 0; i < num_attr; i++){
-            attrs.push(el.attributes[i].name);
-          }
-          var data = {};
-
-          for(i = 0; i < attrs.length; i++){
-            var name = attrs[i];
-            if(name.indexOf("mixpanel-") == 0 && name != "mixpanel-name"){
-              data[name.substring(9)] = el.attributes[i].value;
+    </div><!-- /.modal -->
+</div>
+<script type="text/javascript" src="scripts/vendor/jquery.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.inview.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/queryloader2.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/slick.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.ba-cond.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.slitslider.js"></script>
+<script type="text/javascript" src="scripts/vendor/idangerous.swiper.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.fitvids.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.countTo.js"></script>
+<script type="text/javascript" src="scripts/vendor/TweenMax.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.scrollmagic.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.easypiechart.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.validate.js"></script>
+<script type="text/javascript" src="scripts/vendor/wow.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.placeholder.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.waitforimages.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="scripts/vendor/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.fillparent.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/raphael-min.js"></script>
+<script type="text/javascript" src="scripts/vendor/bootstrap.js"></script>
+<script type="text/javascript" src="scripts/vendor/jquery.bootstrap-touchspin.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/bootstrap-slider.js"></script>
+<script type="text/javascript" src="scripts/vendor/bootstrap-rating-input.js"></script>
+<script type="text/javascript" src="scripts/vendor/bootstrap-hover-dropdown.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.gmap.min.js"></script>
+<script type="text/javascript" src="scripts/circle_diagram.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function getMixpanelData(el) {
+            var num_attr = el.attributes.length;
+            var attrs = [];
+            for (var i = 0; i < num_attr; i++) {
+                attrs.push(el.attributes[i].name);
             }
-          }
-          return data;
-        }
-        $("[mixpanel], button:not([href]), a:not([href]), div[mixpanel-name]").each(function(i,el){
-          var configs = ($(el).attr("mixpanel") || "focus "+($(el).attr("mixpanel-name") || (el.name || el.id))).split(",");
-          for(var i = 0; i < configs.length; i++) {
-            var event = configs[i].trim().split(" ")[0];
-            var value = configs[i].trim().split(" ")[1];
+            var data = {};
 
-            $(el).on(event, function () {
-              var data = getMixpanelData(el);
-              mixpanel.app.track("mp-" + value, data);
+            for (i = 0; i < attrs.length; i++) {
+                var name = attrs[i];
+                if (name.indexOf("mixpanel-") == 0 && name != "mixpanel-name") {
+                    data[name.substring(9)] = el.attributes[i].value;
+                }
+            }
+            return data;
+        }
+
+        $("[mixpanel], button:not([href]), a:not([href]), div[mixpanel-name]").each(function (i, el) {
+            var configs = ($(el).attr("mixpanel") || "focus " + ($(el).attr("mixpanel-name") || (el.name || el.id))).split(",");
+            for (var i = 0; i < configs.length; i++) {
+                var event = configs[i].trim().split(" ")[0];
+                var value = configs[i].trim().split(" ")[1];
+
+                $(el).on(event, function () {
+                    var data = getMixpanelData(el);
+                    mixpanel.app.track("mp-" + value, data);
 //                      return false;
-            })
-          }
+                })
+            }
         });
-        $("button[href], a[href], [type='submit']").each(function(i,el){
-          var value = (el.name || el.id);
-          value = ($(el).attr("mixpanel-name") || value);
-          var data = getMixpanelData(el);
-          if(el.id){
+        $("button[href], a[href], [type='submit']").each(function (i, el) {
+            var value = (el.name || el.id);
+            value = ($(el).attr("mixpanel-name") || value);
+            var data = getMixpanelData(el);
+            if (el.id) {
 //                var selector = "#"+el.id;
 //                console.log(selector + " = www-" + value);
 //                mixpanel.app.track_links(selector,"www-" + value, data);
-            $(el).on('click', function () {
-              mixpanel.app.track("mp-" + value, data);
-            });
-          }
+                $(el).on('click', function () {
+                    mixpanel.app.track("mp-" + value, data);
+                });
+            }
         });
-      });
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    });
+</script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-48682573-1', 'auto');
-        ga('require', 'linkid', 'linkid.js');
-        ga('require', 'displayfeatures');
-        ga('send', 'pageview');
+    ga('create', 'UA-48682573-1', 'auto');
+    ga('require', 'linkid', 'linkid.js');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
 
-    </script>
-    <script src="js/utm_injector.js"></script>
-    <script type="text/javascript">
+</script>
+<script src="js/utm_injector.js"></script>
+<script type="text/javascript">
     /* <![CDATA[ */
     var google_conversion_id = 941575593;
     var google_custom_params = window.google_tag_params;
     var google_remarketing_only = true;
     /* ]]> */
-    </script>
-    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-    </script>
-    <noscript>
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
     <div style="display:inline;">
-    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/941575593/?value=0&amp;guid=ON&amp;script=0"/>
+        <img height="1" width="1" style="border-style:none;" alt=""
+             src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/941575593/?value=0&amp;guid=ON&amp;script=0"/>
     </div>
-    </noscript>
-  </body>
+</noscript>
+</body>
 </html>

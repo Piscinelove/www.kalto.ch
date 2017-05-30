@@ -76,6 +76,7 @@
     font-size: 25px;
     border-radius: 2px;
     width: 54%;
+    display: inline-block;
     margin-top: 30px;
 }
 
@@ -89,9 +90,7 @@
     display: inline-block;
     font-size: 25px;
     border-radius: 2px;
-    float:right;
     margin-top:50px;
-    margin-right: 493px;
 }
 
 #prix{
@@ -150,4 +149,35 @@
 .vertical-align
 {
     margin-top: 10%;
+}
+
+.bullet
+{
+    list-style: none;
+}
+
+.history
+{
+    margin-bottom: 50px;
+}
+
+.contact-form
+{
+    width:35%;
+    height:50px;
+    font-size: 18px;
+    padding-left: 20px;
+    font-style: italic;
+    font-weight: 100;
+    border:2px solid #C6C7C8;
+    margin:10px auto 0px;
+}
+
+.contact{
+    margin-bottom: 70px;
+}
+
+.contact-text
+{
+    margin-bottom: 40px;
 }
