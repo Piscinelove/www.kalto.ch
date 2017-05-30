@@ -1,3 +1,18 @@
+.full {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    height: 100vh;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
 .background-section2
 {
     background: #092756;
@@ -49,24 +64,17 @@
 }
 
 #image{
-   float: left;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 700px;
 }
 
 #btAchete{
     background-color: #22313F;
     border: none;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 25px;
     border-radius: 2px;
-    float:right;
-    margin-top:150px;
-    margin-right: 180px;
 }
 
 #btSubmit{
