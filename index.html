@@ -118,6 +118,17 @@
                 $('#image').attr('src', 'img/assets/thermosBlack.png');
             });
 
+            $('#play').click(function(){
+                $('.ui-content').show();
+                $('#cover-background').show();
+
+            });
+
+            $('.cancel').click(function(){
+                $('.ui-content').hide();
+                $('#cover-background').hide();
+            });
+
         });
 
     </script>
@@ -213,15 +224,48 @@
                     <span class="slogan">
                      " Don't worry, <br/> just chill it "
                     </span>
-                            <div id="text1">
-                                <ul class="bullet">
-                                    <li style="margin-bottom: 15px;">Kalto vous offre un produit de qualité et
-                                        innovant
-                                    </li>
-                                    <li style="margin-bottom: 15px;">Transportable et design</li>
-                                    <li style="margin-bottom: 15px;">Pour vous rafraîchir et vous réchauffer</li>
-                                </ul>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="text1">
+                                        <p style="text-align: justify;font-size: 1.2em;font-weight: bolder">
+                                            Contrôle la température. Goûter la différence
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="text2">
+                                        <p style="text-align: justify;font-size: 1em;font-weight:400">
+                                            Bois ton café ou ton thé à la température
+                                            idéale,</br>dès la première goutte jusqu à la dernière.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                </div>
+                                <div class="col-md-3">
+                                <button id="play" href="#popupVideo"  data-position-to="window" class="btn play-button ui-btn ui-corner-all ui-shadow ui-btn-inline">vidéo promotionnelle<img class="img-responsive play"
+                                                                                                     src="img/assets/play-button.png" height="32" width="32"/></button>
+                                </div>
+
+                                <div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+                                    <a class="cancel">&times;</a>
+                                    <iframe src="https://youtube.googleapis.com/embed/?status=ok&hl=fr&allow_embed=0&ps=docs&partnerid=30&autoplay=0&docid=0B49W15O1u-1kNnF6TEtMWXdDZ2M&abd=0&public=false&el=leaf&title=promofinale.mp4&BASE_URL=https%3A%2F%2Fdrive.google.com%2F&iurl=https%3A%2F%2Fdrive.google.com%2Fvt%3Fauthuser%3D0%26id%3D0B49W15O1u-1kNnF6TEtMWXdDZ2M&reportabuseurl=https%3A%2F%2Fdrive.google.com%2Fabuse%3Fauthuser%3D0%26id%3D0B49W15O1u-1kNnF6TEtMWXdDZ2M&token=1&plid=V0QUxiP0Ug8nlw&timestamp=1496923457563&length_seconds=27&BASE_YT_URL=https%3A%2F%2Fdrive.google.com%2F&cc_load_policy=1&authuser=0&cc3_module=1&wmode=window&override_hl=1&enablecastapi=0&enablepostapi=1&postid=drive-viewer-video-player-object-0&origin=https%3A%2F%2Fdrive.google.com" width="1000" height="560" seamless="" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div id="cover-background" ></div>
+
+                                <div class="col-md-3">
+                                </div>
+                                <div class="col-md-3">
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
