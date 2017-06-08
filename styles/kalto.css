@@ -110,13 +110,13 @@
 }
 
 #text1{
-    font-size: 2em;
+    font-size: 0.8em;
     margin-top: 100px;
 }
 
 .text1{
-    font-size: 2em;
-    margin-top: 100px;
+    font-size: 1.7em;
+    margin-top: 50px;
     color:white !important;
 }
 .text1 p{
