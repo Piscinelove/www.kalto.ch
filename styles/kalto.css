@@ -288,3 +288,7 @@ iframe {
 .cancel:hover{
     color:white;
 }
+
+.title{
+    font-weight: 500;
+}
